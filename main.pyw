@@ -2,8 +2,11 @@ import tkinter as tk
 import random
 import string
 import pyperclip
+import os
 
 root = tk.Tk()
+icon_path = os.path.join(os.path.dirname(__file__), 'favicon.ico')
+root.iconbitmap(default=icon_path)
 # definindo largura e altura da janela com base na resolução do usuário
 screen_width = root.winfo_screenwidth()
 screen_height = root.winfo_screenheight()
